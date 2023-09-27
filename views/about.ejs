@@ -4,19 +4,139 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="/style.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <title> My Portfolio</title>
+
+<style>
+    body{
+      background-color: rgb(80, 137, 149);
+    }
+  
+    *{
+      padding: 0;
+      margin: 0;
+      font-family: 'josefin sans', sans-serif;
+      box-sizing: border-box ;
+    }
+  .logo{
+    color: wheat;
+    font-size: 25px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    float: right;
+  }
+    span{
+      color: red;
+    }
+  
+    .about{
+        width: 100%;
+        padding: 100px 0px;
+        background-color: #191919;
+    }
+
+    .about img{
+        height: auto;
+        width: 430px;
+        border-radius: 10px;
+    }
+
+    .about-text{
+        width: 550px;
+    }
+
+    .main{
+        width: 1130px;
+        max-width: 95%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .about-text h2{
+        color: wheat;
+        letter-spacing: 2px;
+        font-size: 75px;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+    }
+
+    .about-text h5{
+        color: wheat;
+        letter-spacing: 2px;
+        font-size: 22px;
+        margin-bottom: 25px;
+        text-transform: capitalize;
+    }
+
+    .about-text p{
+        color: wheat;
+        letter-spacing: 1px;
+        line-height: 28px;
+        font-size: 18px;
+        margin-bottom: 45px;
+     }
+
+     button{
+         background-color: #f9004d;
+         color: white;
+         text-decoration: none;
+         border: 2px solid transparent;
+         font-weight: bold;
+         padding: 13px 30px;
+         border-radius: 30px;
+         transition: .4s;
+     }
+
+     button:hover{
+         background-color: transparent;
+         border: 2px solid #f9004d;
+         cursor: pointer;
+     }
+
+  
+  </style>
 <body>
 
-<ul>
-    <h1> WelAboutcome to my </h1>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Babajide's Portfolio</a>
+          </div>
     
-    <div id="logo"><img style="width: 40px;" src="logo.jpg"/></div>
-    <li><a  href="/Home">Home</a></li>
-    <li><a class="active" href="about"> About me</a></li>
-    <li><a href="/projects"> projects</li>
-    <li><a style="margin-top:-26px;" href="/services"> services</li>
-    <li><a href="/contact"> contact</li>
-    </ul>
+          <ul class="nav navbar-nav">
+                <li><a class="active" href="/Home"> Home</a></li>
+                <li><a  href="/about"> About me</a></li>
+                <li><a href="/projects"> projects</a></li>
+                <li><a href="/services"> services</a></li>
+                <li><a href="/contact"> contact</a></li>
+          </ul>
+          <h2 class="logo"> TRIG<span>GER</span></h2>
+        </div>
+    </nav>
+
+
+        <!-- About Section-->
+
+    <section class="about">
+        <div class="main">
+            <img src="../Logo/">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <h5>Developer & <span>Designer</span> </h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+                    voluptatum recusandae perferendis ad tempora quaerat
+                    autem illum voluptate consequuntur cum, sed placeat quo soluta at!</p>
+                <button type="button">Lets Talk </button>
+            </div>
+        </div>
+    </section>
 
 </body>
 </head>

@@ -4,18 +4,170 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="/style.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/d1f25645e1.js" crossorigin="anonymous"></script
 <title> My Portfolio</title>
+
+<style>
+    body{
+      background-color: peru;
+    }
+  
+    *{
+      padding: 0;
+      margin: 0;
+      font-family: 'josefin sans', sans-serif;
+      box-sizing: border-box ;
+    }
+  .logo{
+    color: wheat;
+    font-size: 25px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    float: right;
+  }
+    span{
+      color: red;
+    }
+  
+    .contact-me{
+         width: 100%;
+         height: 290px;
+         background: #191919;
+         display: flex;
+         align-items: center;
+         flex-direction: column;
+         justify-content: center;
+     }
+
+     .contact-me p{
+         color: white;
+         font-size: 30px;
+         font-weight: bold;
+         margin-bottom: 25px;
+     }
+
+     .contact-me .button-two{
+        background-color: #f9004d;
+        color: white;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 13px 30px;
+        border-radius: 30px;
+        transition: .4s;
+     }
+
+     .contact-me .button-two:hover{
+        background-color: transparent;
+        border: 2px solid #f9004d;
+        cursor: pointer;
+     }
+
+     footer{
+         position: relative;
+         width: 100%;
+         height: 400px;
+         background: #101010;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+     }
+
+     footer p:nth-child(1){
+         font-size: 30px;
+         color: white;
+         margin-top: 50px;
+         margin-bottom: 50px;
+         font-weight: bold;
+     }
+
+
+     footer p:nth-child(2){
+         color: white;
+         font-size: 17px;
+         width: 500px;
+         text-align: center;
+        line-height: 26px; 
+     }
+
+     .social {
+         display: flex;
+     }
+
+     .social a{
+         width: 45px;
+         height: 45px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         background: #f9004d;
+        border-radius: 50%;
+        margin: 22px 10px; 
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+     }
+
+     .social a:hover{
+         transform: scale(1.3);
+         transition:  .3s;
+     }
+
+     .end{
+         position: absolute;
+         color: #f9004d;
+         bottom: 10px;
+         font-size: 14px;
+     }
+  
+  </style>
 <body>
 
-<ul>
-    <h1> Welcome to my Contacts</h1>
-    <ul>
-        <li><a  href="/Home">Home</a></li>
-        <li><a  href="/about"> About me</a></li>
-        <li><a href="/projects"> projects</li>
-        <li><a style="margin-top:-26px;" href="/services"> services</li>
-        <li><a class="active"   href="/contact"> contact</li>
-        </ul>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Babajide's Portfolio</a>
+          </div>
+    
+          <ul class="nav navbar-nav">
+                <li><a class="active" href="/Home"> Home</a></li>
+                <li><a  href="/about"> About me</a></li>
+                <li><a href="/projects"> projects</a></li>
+                <li><a href="/services"> services</a></li>
+                <li><a href="/contact"> contact</a></li>
+          </ul>
+          <h2 class="logo"> TRIG<span>GER</span></h2>
+        </div>
+    </nav>
+
+
+    <!-- Contact Me-->
+    <div class="contact-me">
+        <p>Let Me Get You A Beautiful Website. </p>
+        <a class="button-two" href="#">Hire Me</a>
+
+    </div>
+
+    <!--Footer -->
+    <footer>
+        <p>Babajide Olawale</p>
+        <p>For more HTML, CSS, and more coding tutorial -
+            please click on the link below to subscribe to my channel</p>
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-github-square"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p class="end">CopyRight By Triggzz</p>
+    </footer>
+
 
 </body>
 </head>

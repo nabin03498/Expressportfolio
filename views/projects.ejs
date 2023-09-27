@@ -4,17 +4,57 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="/style.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <title> My Portfolio</title>
+
+<style>
+    body{
+      background-color: goldenrod;
+    }
+  
+    *{
+      padding: 0;
+      margin: 0;
+      font-family: 'josefin sans', sans-serif;
+      box-sizing: border-box ;
+    }
+  .logo{
+    color: wheat;
+    font-size: 25px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    float: right;
+  }
+    span{
+      color: red;
+    }
+  
+    
+  
+  </style>
 <body>
 
-<ul>
-    <h1> Welcome to my projects</h1>
-    <li><a  href="/Home">Home</a></li>
-    <li><a  href="/about"> About me</a></li>
-    <li><a class="active" href="/projects"> projects</li>
-    <li><a style="margin-top:-26px;" href="/services"> services</li>
-    <li><a href="/contact"> contact</li>
-    </ul>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Babajide's Portfolio</a>
+          </div>
+    
+          <ul class="nav navbar-nav">
+                <li><a class="active" href="/Home"> Home</a></li>
+                <li><a  href="/about"> About me</a></li>
+                <li><a href="/projects"> projects</a></li>
+                <li><a href="/services"> services</a></li>
+                <li><a href="/contact"> contact</a></li>
+          </ul>
+          <h2 class="logo"> TRIG<span>GER</span></h2>
+        </div>
+    </nav>
 
 </body>
 </head>
