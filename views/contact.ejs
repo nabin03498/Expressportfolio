@@ -10,12 +10,12 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script src="https://kit.fontawesome.com/d1f25645e1.js" crossorigin="anonymous"></script
+<script src="https://kit.fontawesome.com/d1f25645e1.js" crossorigin="anonymous"></script>
 <title> My Portfolio</title>
 
 <style>
     body{
-      background-color: peru;
+      background-color: rgb(237, 231, 231);
     }
   
     *{
@@ -126,6 +126,14 @@
          bottom: 10px;
          font-size: 14px;
      }
+
+     .forms{
+      justify-content: center;
+      display: flex;
+         align-items: center;
+         flex-direction: column;
+         border-radius: 15px;
+           }
   
   </style>
 <body>
@@ -154,6 +162,58 @@
         <a class="button-two" href="#">Hire Me</a>
 
     </div>
+
+    <!--Form -->
+    <div class="forms">
+      <form action="/action_page.php">
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname"><br><br>
+      <label for="Contact">Contact Number:</label><br>
+      <input type="number" id="contact" name="contactNumber"><br>
+      <label for="Email">E-mail:</label><br>
+      <input type="text" id="Email" name="Email"><br><br>
+      <textarea name="message" rows="15" cols="30">
+      Write your message here, We care. 
+        </textarea>
+       <br>
+      <input type="submit">
+      </form>
+    </div>
+
+      <!-- Contact & Map -->
+      <section class="p-5">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-md">
+              <h2 class="text-center mb-4">Contact Info</h2>
+              <ul class="list-group list-group-flush lead">
+                <li class="list-group-item">
+                  <span class="fw-bold">Main Location:</span> 97 reidmount Avenue
+                </li>
+                <li class="list-group-item">
+                  <span class="fw-bold">Enrollment Phone:</span> (555) 555-5555
+                </li>
+                <li class="list-group-item">
+                  <span class="fw-bold">Student Phone:</span> (333) 333-3333
+                </li>
+                <li class="list-group-item">
+                  <span class="fw-bold">Enrollment Email:</span> (555)
+                  enroll@frontendbc.test
+                </li>
+                <li class="list-group-item">
+                  <span class="fw-bold">Student Email:</span>
+                  student@frontendbc.test
+                </li>
+              </ul>
+            </div>
+            <div class="col-md">
+              <div id="map"></div>
+            </div>
+          </div>
+        </div>
+      </section>
 
     <!--Footer -->
     <footer>
