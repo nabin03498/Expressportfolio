@@ -34,7 +34,76 @@
       color: red;
     }
   
-    
+    .service {
+         background: #101010;
+         width: 100%;
+         padding: 100px 0px;
+     }
+
+     .title h2{
+         color: white;
+         font-size: 75px;
+         width: 1130px;
+         margin: 30px auto;
+         text-align: center;
+     }
+
+     .box{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         min-height: 400px;
+     }
+
+     .card{
+         height: 365px;
+         width: 335px;
+         padding: 20px 35px;
+         background: #191919;
+         border-radius: 20px;
+         margin: 15px;
+         position: relative;
+         overflow: hidden;
+         text-align: center;
+     }
+
+     .card i {
+         font-size: 50px;
+         display: block;
+         text-align: center;
+         margin: 25px 0px;
+         color: #f9004d;
+     }
+
+     h5{
+         color: white;
+         font-size: 23px;
+         margin-bottom: 15px;
+     }
+
+     .pra p{
+         color: #fcfc;
+         font-size: 16px;
+         line-height: 27px;
+         margin-bottom: 25px;
+     }
+
+     .card .button {
+        background-color: goldenrod;
+        color: white;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 8px 21px;
+        border-radius: 30px;
+        transition: transform .4s;
+     }
+
+     .card .button:hover{
+        background-color: transparent;
+        border: 2px solid #f9004d;
+        cursor: pointer;
+     }
   
   </style>
 <body>
@@ -52,9 +121,57 @@
                 <li><a href="/services"> services</a></li>
                 <li><a href="/contact"> contact</a></li>
           </ul>
-          <h2 class="logo"> TRIG<span>GER</span></h2>
+          <h2 class="logo"> DEV<span>TRIGGZ</span></h2>
         </div>
     </nav>
+
+       <!-- Project section -->
+  <div class="service">
+    <div class="title">
+        <h2>My Projects</h2>
+    </div>
+  
+    <div class="box">
+        <div class="card">
+            <i class="fa-solid fa-bars"></i>
+            <h5>Ruby Homes</h5>
+            
+            <div class="pra">
+              <img src="/RubyHomes.jpg" height="140px" width="140px">
+                <p>A training Hackathon project built on React.js, i was responsible for the Rents and Contact us pages.</p>
+  
+                <p style="text-align: center;">
+                    <a class="button" href="file:///C:/Users/arotr/Desktop/projects/Ruby%20Homes%20Mini/index.html">Visit RubyHomes</a>
+                </p>
+            </div>
+        </div>
+  
+        <div class="card">
+            <i class="fa-solid fa-user-astronaut"></i>
+            <h5>Quiz Game</h5>
+            <div class="pra">
+              <img src="/Quiz Game .png" height="160px" width="160px">
+                <p>A trivia quiz game about the developer (Dev triggz) built on React js. Self Built.</p>
+  
+                <p style="text-align: center;">
+                    <a class="button" href="#">Play Game</a>
+                </p>
+            </div>
+        </div>
+  
+        <div class="card">
+          <i class="fa-solid fa-user-astronaut"></i>
+          <h5> FullStack Bootcamp </h5>
+          <div class="pra">
+              <img src="/Bootstrap.png" height="140px" width="140px">
+              <p> A FullStack Bootcamp Website built with alot of HTML and Bootstrap. Self built.</p>
+                
+              <p style="text-align: center;">
+                  <a class="button" href="http://127.0.0.1:5501/Bootstrap.html#">Enroll to Bootcamp</a>
+              </p>
+          </div>
+      </div>
+
 
 </body>
 </head>
